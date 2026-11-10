@@ -57,7 +57,7 @@
       overlay = document.createElement('span');
       overlay.className = 'translated-menu';
       overlay.hidden = true;
-      const paths = ['../story%20of%20dispel%200/story%20of%20dispel.htm?langsite=7', '../feature/feature%20of%20dispel.htm?langsite=7', '../screenshot/screen%20shot%20of%20dispel.htm?langsite=7', '../char/dispel%20characters.htm?langsite=7', '../system/system.htm?langsite=7', 'https://web.archive.org/web/20010417052826/http://www.e2soft.com/dispel/html/board.htm'];
+      const paths = ['../story%20of%20dispel%200/story%20of%20dispel.htm?langsite=8', '../feature/feature%20of%20dispel.htm?langsite=8', '../screenshot/screen%20shot%20of%20dispel.htm?langsite=8', '../char/dispel%20characters.htm?langsite=8', '../system/system.htm?langsite=8', 'https://web.archive.org/web/20010417052826/http://www.e2soft.com/dispel/html/board.htm'];
       const labels = ['Story', 'Features', 'Screens', 'Characters', 'System', 'Board'];
       const widths = [75, 82, 76, 65, 80, 46];
       const areas = [...document.querySelectorAll('map[name="ImageMap1"] area')];
