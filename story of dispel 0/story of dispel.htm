@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=EUC-KR">
+
+<title>story of dispel</title>
+<meta name="generator" content="Namo WebEditor v4.0">
+
+<script language="JavaScript">
+<!--
+function namosw_add_layer_action(layer_str, event_str, action_str, arg1)
+{
+  var layer = (navigator.appName == 'Netscape') ? document.layers[layer_str] : document.all[layer_str];
+  if (layer.namosw_action_array == null) 
+    layer.namosw_action_array = new Array;
+  var actions = layer.namosw_action_array;
+  var i       = actions.length;
+  actions[i]            = new String(event_str);
+  actions[i].action_str = action_str;
+  if (action_str == 'showlayer' || action_str == 'hidelayer') {
+    actions[i].target_layer = (navigator.appName == 'Netscape') ? document.layers[arg1] : document.all[arg1];
+  } else if (action_str == 'activatetimeline') {
+    actions[i].timeline_name = arg1;
+  }
+  if (layer.captureEvents)
+    layer.captureEvents(Event.MOUSEUP);
+  layer.onmouseup   = namosw_a_click;
+  layer.onmouseover = namosw_a_mouseover;
+  layer.onmouseout  = namosw_a_mouseout;
+}
+
+function namosw_a_mouseover()
+{
+  var actions = this.namosw_action_array;
+  for (var i = 0; i < actions.length; i++) {
+    if (actions[i] == 'onmouseover') {
+      if (actions[i].action_str == 'showlayer' || actions[i].action_str == 'hidelayer') {
+        namosw_show_layer(actions[i].target_layer, actions[i].action_str == 'showlayer');
+      }
+      else if (actions[i].action_str == 'activatetimeline')
+        NamoTime_Play(actions[i].timeline_name);
+    }
+  }
+}
+
+function namosw_a_mouseout()
+{
+  var actions = this.namosw_action_array;
+  for (var i = 0; i < actions.length; i++) {
+    if (actions[i] == 'onmouseout') {
+      if (actions[i].action_str == 'showlayer' || actions[i].action_str == 'hidelayer')
+        namosw_show_layer(actions[i].target_layer, actions[i].action_str == 'showlayer');
+      else if (actions[i].action_str == 'activatetimeline')
+        NamoTime_Play(actions[i].timeline_name);
+    }
+  }
+}
+
+function namosw_a_click()
+{
+  var actions = this.namosw_action_array;
+  for (var i = 0; i < actions.length; i++) {
+    if (actions[i] == 'onclick') {
+      if (actions[i].action_str == 'showlayer' || actions[i].action_str == 'hidelayer')
+        namosw_show_layer(actions[i].target_layer, actions[i].action_str == 'showlayer');
+      else if (actions[i].action_str == 'activatetimeline')
+        NamoTime_Play(actions[i].timeline_name);
+    }
+  }
+}
+
+function namosw_show_layer(layer, flag)
+{
+  if (navigator.appName == 'Netscape')
+    layer.visibility = flag ? 'show' : 'hide';
+  else
+    layer.style.visibility = flag ? 'visible' : 'hidden';
+}
+
+function namosw_init_layer_action()
+{
+  namosw_add_layer_action('layer1', 'onmouseover', 'showlayer', 'layer2');
+  namosw_add_layer_action('layer1', 'onmouseout', 'hidelayer', 'layer2');
+}
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="black" text="black" link="blue" vlink="purple" alink="red" onload="namosw_init_layer_action();">
+ 
+
+<table border="0" cellpadding="0" cellspacing="0" width="800">
+    <tbody><tr>
+        <td width="800" valign="bottom" background="../char/dispel%20characters_files/index.htm"><p><img src="../feature/feature%20of%20dispel_files/menu.gif" width="570" height="135" border="0" usemap="#ImageMap1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="story%20of%20dispel_files/gamestory.gif" width="173" height="66" border="0"></p></td>
+    </tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" width="800" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+    <tbody><tr>
+        <td width="200" height="487" align="left" valign="top"><p>&nbsp;</p><div id="layer1" style="width:126px; height:29px; position:absolute; left:52px; top:180px; z-index:1;">
+                <p align="left"><a href="https://web.archive.org/web/20011227151757/http://www.e2soft.com/kr/" target="_blank"><font size="2" color="white"><img src="../char/dispel%20characters_files/e2.gif" width="123" height="25" border="0"></font></a><font size="2" color="white">&nbsp;</font></p>
+            </div></td>
+        <td width="600" height="487" align="left" valign="top"><p align="left">&nbsp;</p>
+            <p align="left"><font size="2" color="#00A3DA">아주 오래 전 이야기란다. 
+            오래 전 신들은 DMAN을 만들고 사람들도 만들었지. 사람들은 DMAN에서 
+            평화롭게 지냈고 신들은 사람들에게 많은 것들을 주었어. 풀도 나무도... 
+            하늘을 나는 새도 주었지. 신들은 아주 흡족해 했단다. 그런데 말이야. 
+            시간이 지나면서 사람들은 평화로운 세상에 싫증을 느낀 거야. 사람들은 
+            서로를 시기하고 미워하며 서로를 죽였지. 그들은 전쟁을 일삼으며 신들이 
+            만들어 준 대지를 더럽혔지. 후... 너도 조금만 자라면 알게 될 거다, 
+            사람들이란 얼마나 어리석은 존재들인지."</font></p>
+            <p><font size="2" color="#00A3DA">이런 사람들을 두고 신들은 고민을 
+            했단다. 어떤 신들은 모두 멸해버리자고 했고 어떤 신들은 그들이 지칠 
+            때까지 기다리자고 했단다. 사람들에게 허락한 땅이니 사람들에게 맡기자고 
+            한 신들도 있었단다. 그러던 중에 큰 사건이 생긴 거야. 사람들을 미워하던 
+            파괴의 신 '하라스'가 DMAN에 내려와 사람들을 학살하기 시작한 거야. 
+            이에 창조의 신 '바라'는 매우 화를 냈고 곧 신들은 둘로 갈라져 심하게 
+            싸웠지. 인간들의 싸움이 신들의 싸움이 되어버린 거야. 하늘은 어둠으로 
+            덮이고 바다는 피 빛으로 물들었지. 땅에는 어둠만 가득 차고 많은 사람들이 
+            그 전쟁으로 죽어갔지."</font></p>
+            <p><font size="2" color="#00A3DA">끝이 없어 보이던 전쟁은 힘의 신 
+            '기드'가 돌로 거대한 거인들을 만들면서 '하라스'에게 유리하게 되었지. 
+            그들은 그 거인들을 '갈가돌'이라 불렀단다. 그들의 힘은 상상을 초월한 
+            것이었단다. 땅은 무참히 짓밟혔고 많은 수의 '갈가돌'들 앞에 '바라'는 
+            당황했단다. 이에 '바라'의 아들이자 꿈의 신인 '할롬'은 '갈가돌'들을 
+            물리치기 위해 드래곤들을 만들어 냈단다. 땅은 거대한 '갈가돌'들로 
+            가득 차고 하늘은 드래곤들로 뒤덮였단다. 굉장했을 게야. '할롬'이 
+            만든 드래곤들은 그 아름다운 자태만큼이나 용맹했단다. 영원할 것 같았던 
+            전쟁은 많은 드래곤들의 죽을 앞에 조금씩 '바라'에게 유리하게 되고 
+            결국 '하라스'는 순백의 드래곤을 탄 '할롬' 앞에 쓰러졌단다. '하라스'는 
+            DMAN 대륙 어딘가에 봉인되고 그를 따랐던 많은 신들은 유배당하거나 
+            멀리 떠나 버렸단다." </font></p>
+            <p><font size="2" color="#00A3DA">그제서야 '바라'는 자신들의 전쟁으로 
+            죽어 간 많은 사람들을 돌아보게 되었어. 그들을 불쌍히 여긴 '바라'는 
+            영원의 땅 '엘로힘'을 만들고 선택받은 자들을 그 곳으로 데려갔단다. 
+            '바라'와 많은 신들은 '엘로힘'으로 떠나버리고 DMAN은 남겨진 사람들의 
+            것이 되었지. 영원을 허락 받지 못한 사람들의 것 말이다. 너나 나처럼. 
+            "</font></p>
+            <p><font size="2" color="#00A3DA">그런데 '하라스'가 봉인될 때 남긴 
+            말이 있다는 구나. 언젠가 사람들이 DMAN을 가득 채울 때 자신이 돌아 
+            올 것이라고 말이야. 사람들은 그 예언으로 두려워했고 그런 사람들 
+            앞에 '바라'는 한 가지 약속을 했어. '하라스'가 돌아 올 때 '엘로힘'의 
+            길이 다시 열릴 것이라고. ... ... 얘야. 난 말이다 매일 밤 '엘로힘'을 
+            꿈꾼단다. 미움과 고통이 없는 그 곳. 영원한 사랑만이 있을 그곳을 
+            말이다." 할머닌 언제나 그렇게 '엘로힘'을 바라다가 돌아가셨다.</font></p></td>
+    </tr>
+    <tr>
+        <td width="200" height="40" align="right" valign="bottom"><p>&nbsp;</p></td>
+        <td width="600" height="40" align="right" valign="bottom"><p><br> <a href="../story%20of%20dispel%201/story%20of%20dispel.htm?langsite=7"><img src="story%20of%20dispel_files/next.gif" width="48" height="21" border="0"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td width="200" height="40" align="left" valign="top"><p>&nbsp;</p></td>
+        <td width="600" height="40" align="left" valign="top"><p><font face="Arial" size="2" color="silver">copyright E2SOFT. All rights reserved.</font></p></td>
+    </tr>
+</tbody></table>
+<p>&nbsp;</p><map name="ImageMap1">
+<area shape="rect" coords="127, 70, 191, 89">
+<area shape="rect" coords="202, 70, 271, 88" href="../feature/feature%20of%20dispel.htm?langsite=7">
+<area shape="rect" coords="284, 70, 349, 88" href="../screenshot/screen%20shot%20of%20dispel.htm?langsite=7">
+<area shape="rect" coords="360, 70, 405, 88" href="../char/dispel%20characters.htm?langsite=7">
+<area shape="rect" coords="416, 70, 493, 88" href="../system/system.htm?langsite=7">
+<area shape="rect" coords="505, 69, 551, 87" href="https://web.archive.org/web/20011227151757/http://www.e2soft.com/kr/community/index.html" target="_blank">
+</map>
+
+
+
+
+<script src="../language.js?v=7" charset="utf-8"></script>
+</body></html>
+<!--
+     FILE ARCHIVED ON 15:17:57 Dec 27, 2001 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:17:05 Jul 07, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.955
+  exclusion.robots: 0.298
+  exclusion.robots.policy: 0.283
+  esindex: 0.012
+  cdx.remote: 5.456
+  LoadShardBlock: 31.057 (3)
+  PetaboxLoader3.datanode: 54.008 (4)
+  load_resource: 85.858
+  PetaboxLoader3.resolve: 58.268
+-->

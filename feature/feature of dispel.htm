@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=EUC-KR">
+
+<title>feature of dispel</title>
+<meta name="generator" content="Namo WebEditor v4.0">
+
+<script language="JavaScript">
+<!--
+function namosw_add_layer_action(layer_str, event_str, action_str, arg1)
+{
+  var layer = (navigator.appName == 'Netscape') ? document.layers[layer_str] : document.all[layer_str];
+  if (layer.namosw_action_array == null) 
+    layer.namosw_action_array = new Array;
+  var actions = layer.namosw_action_array;
+  var i       = actions.length;
+  actions[i]            = new String(event_str);
+  actions[i].action_str = action_str;
+  if (action_str == 'showlayer' || action_str == 'hidelayer') {
+    actions[i].target_layer = (navigator.appName == 'Netscape') ? document.layers[arg1] : document.all[arg1];
+  } else if (action_str == 'activatetimeline') {
+    actions[i].timeline_name = arg1;
+  }
+  if (layer.captureEvents)
+    layer.captureEvents(Event.MOUSEUP);
+  layer.onmouseup   = namosw_a_click;
+  layer.onmouseover = namosw_a_mouseover;
+  layer.onmouseout  = namosw_a_mouseout;
+}
+
+function namosw_a_mouseover()
+{
+  var actions = this.namosw_action_array;
+  for (var i = 0; i < actions.length; i++) {
+    if (actions[i] == 'onmouseover') {
+      if (actions[i].action_str == 'showlayer' || actions[i].action_str == 'hidelayer') {
+        namosw_show_layer(actions[i].target_layer, actions[i].action_str == 'showlayer');
+      }
+      else if (actions[i].action_str == 'activatetimeline')
+        NamoTime_Play(actions[i].timeline_name);
+    }
+  }
+}
+
+function namosw_a_mouseout()
+{
+  var actions = this.namosw_action_array;
+  for (var i = 0; i < actions.length; i++) {
+    if (actions[i] == 'onmouseout') {
+      if (actions[i].action_str == 'showlayer' || actions[i].action_str == 'hidelayer')
+        namosw_show_layer(actions[i].target_layer, actions[i].action_str == 'showlayer');
+      else if (actions[i].action_str == 'activatetimeline')
+        NamoTime_Play(actions[i].timeline_name);
+    }
+  }
+}
+
+function namosw_a_click()
+{
+  var actions = this.namosw_action_array;
+  for (var i = 0; i < actions.length; i++) {
+    if (actions[i] == 'onclick') {
+      if (actions[i].action_str == 'showlayer' || actions[i].action_str == 'hidelayer')
+        namosw_show_layer(actions[i].target_layer, actions[i].action_str == 'showlayer');
+      else if (actions[i].action_str == 'activatetimeline')
+        NamoTime_Play(actions[i].timeline_name);
+    }
+  }
+}
+
+function namosw_show_layer(layer, flag)
+{
+  if (navigator.appName == 'Netscape')
+    layer.visibility = flag ? 'show' : 'hide';
+  else
+    layer.style.visibility = flag ? 'visible' : 'hidden';
+}
+
+function namosw_init_layer_action()
+{
+  namosw_add_layer_action('layer1', 'onmouseover', 'showlayer', 'layer2');
+  namosw_add_layer_action('layer1', 'onmouseout', 'hidelayer', 'layer2');
+}
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="black" text="black" link="blue" vlink="purple" alink="red" onload="namosw_init_layer_action();">
+ 
+
+<table border="0" cellpadding="0" cellspacing="0" width="800">
+    <tbody><tr>
+        <td width="800" valign="bottom" background="../char/dispel%20characters_files/index.htm"><p><img src="feature%20of%20dispel_files/menu.gif" width="570" height="135" border="0" usemap="#ImageMap1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="feature%20of%20dispel_files/feature.gif" width="173" height="66" border="0"></p></td>
+    </tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" width="800">
+    <tbody><tr>
+        <td width="200" align="left" valign="top"><p>&nbsp;</p><div id="layer1" style="width:126px; height:29px; position:absolute; left:52px; top:180px; z-index:1;">
+                <p align="left"><a href="https://web.archive.org/web/20011227151426/http://www.e2soft.com/kr/"><font size="2" color="white"><img src="../char/dispel%20characters_files/e2.gif" width="123" height="25" border="0"></font></a><font size="2" color="white">&nbsp;</font></p>
+            </div></td>
+        <td width="548" align="left" valign="top"><p align="left">&nbsp;</p>
+            <p align="left"><font size="2" color="#00B8F6"><b>정통 RPG와 액션 
+            RPG의 새로운 만남!</b></font><font size="2" color="#00A3DA"><br> 
+            디스펠은「문화광관부」가 주최하는 우수게임 사전제작지원에 당선되었으며 
+            탄탄한 시나리오와 참신한 기획으로 주목을 받고 있는 게임이다. 디스펠에 
+            관심을 가지게 하는 요소는 국내 인기를 끌어던 롤플레잉 게임들의 장점을 
+            모두 가졌기 때문이다. 실시간으로 지속되는 전투, 높은 자유도, 캐릭터의 
+            다양함이 장점이며 이러한 것들은 서양의 높은 자유도와 일본식 스토리 
+            전개방식의 적절한 조화에서 나온다. 지금까지 출시된 롤플레잉 게임들 
+            중에는 지나치게 액션성을 추구하여 성격이 변질되거나 자유도에 치중한 
+            나머지 지루한 감이 나는 문제점이 있었는데 이 두가지 테마를 적절하게 
+            조화시킨 것이 가장 큰 특색이라고 할 수 있다. </font></p>
+            <p align="left"><font size="2" color="#00B8F6"><b>120여 가지의 빛의 
+            마법과 어둠의 마법 </b></font><font size="2" color="#00A3DA">디스펠의 
+            세계관은 선과 악이 공존하는 선악 공존설에 기반을 두고 있다. 또한 
+            게이머에게 최대한의 자유도가 제공되기 때문에 어둠의 전사도 될 수 
+            있다. 마법은 크게 선과 악의 마법으로 구분되어 각각 빛의 마법 80여가지, 
+            어둠의 마법 40여 가지가 존재한다.·스킬(Skill)시스템스킬 시스템이란 
+            어떤 무기나 마법을 자주 사용하는 만큼 그 기술이 늘어나는 시스템을 
+            말한다. &nbsp;이런한 기술을 사용함으로 게임의 흥미요소를 높이고 
+            있다.</font></p>
+            <p><font size="2" color="#00B8F6"><b>캐릭터 창조 시스템(주인공을 
+            원하는대로 바꾼다) </b></font><font size="2" color="#00A3DA">디스펠은 
+            게이머가 최초로 모험을 시작 할 때 자신이 원하는 캐릭터를 창조 할 
+            수 있는 캐릭터 창조 시스템을 채택하고 있어서 다른 게임들과는 달리 
+            그 캐릭터에 대한 애착을 느낄 수 있다.</font></p>
+            <p><font size="2" color="#00B8F6"><b>실사와 같은 그래픽 </b></font><font size="2" color="#00A3DA">디스펠에 등장하는 모든 캐릭터와 배경 등은 
+            모두 3D랜더링으로 처리했고 여기에 알파블렌딩, 글라스 효과, 레이트레이싱 
+            효과등 다양한 3D 기법을 도입했다.</font></p>
+            <p><font size="2" color="#00B8F6"><b>강력한 3D 효과 </b></font><font size="2" color="#00A3DA">광원 효과, 글라스 효과, 레이트 레이싱 
+            효과 (반사 효과) 등을 사용하여 3D 게임에서나 가능했던 효과들을 디스펠에서 
+            경험할 수 있다.</font></p>
+            <p><font size="2" color="#00B8F6"><b>베틀 서버 지원의 네트웍 시스템 
+            </b></font><font size="2" color="#00A3DA">디아블로 베틀넷과 같이 
+            똑같은 모습의 전사 마법사는 디스펠에 없다. 그 이유인 즉 Dispel에서는 
+            전혀 다른 모습의 캐릭터를 수도 없이 만들 수 있기 때문. 확실히 구분이 
+            가는 인물들로 네트웍을 통해 친구를 만들고 디스펠만의 세계를 창조해 
+            나갈 수 있다. 이것은 곧 패치 파일로 지원 예정이다.</font><font size="2" color="white"> </font></p></td>
+    </tr>
+    <tr>
+        <td width="200" height="40" align="right" valign="bottom"><p>&nbsp;</p></td>
+        <td width="548" height="40" align="right" valign="bottom"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td width="200" height="40" align="left" valign="top"><p>&nbsp;</p></td>
+        <td width="548" height="40" align="left" valign="top"><p><font face="Arial" size="2" color="silver">copyright E2SOFT. All rights reserved.</font></p></td>
+    </tr>
+</tbody></table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p><map name="ImageMap1">
+<area shape="rect" coords="127, 70, 191, 89" href="../story%20of%20dispel%200/story%20of%20dispel.htm?langsite=7">
+<area shape="rect" coords="202, 70, 271, 88">
+<area shape="rect" coords="284, 70, 349, 88" href="../screenshot/screen%20shot%20of%20dispel.htm?langsite=7">
+<area shape="rect" coords="360, 70, 405, 88" href="../char/dispel%20characters.htm?langsite=7">
+<area shape="rect" coords="416, 70, 493, 88" href="../system/system.htm?langsite=7">
+<area shape="rect" coords="505, 69, 551, 87" href="https://web.archive.org/web/20011227151426/http://www.e2soft.com/kr/community/index.html" target="_blank">
+</map>
+
+
+
+
+
+
+
+
+<script src="../language.js?v=7" charset="utf-8"></script>
+</body></html>
+<!--
+     FILE ARCHIVED ON 15:14:26 Dec 27, 2001 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:51:48 Jul 07, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1.079
+  exclusion.robots: 0.546
+  exclusion.robots.policy: 0.535
+  esindex: 0.01
+  cdx.remote: 5.904
+  LoadShardBlock: 272.567 (3)
+  PetaboxLoader3.datanode: 71.631 (4)
+  PetaboxLoader3.resolve: 363.055 (3)
+  load_resource: 195.543
+-->

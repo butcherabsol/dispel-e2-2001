@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=EUC-KR">
+
+<title>story of dispel</title>
+<meta name="generator" content="Namo WebEditor v4.0">
+
+<script language="JavaScript">
+<!--
+function namosw_add_layer_action(layer_str, event_str, action_str, arg1)
+{
+  var layer = (navigator.appName == 'Netscape') ? document.layers[layer_str] : document.all[layer_str];
+  if (layer.namosw_action_array == null) 
+    layer.namosw_action_array = new Array;
+  var actions = layer.namosw_action_array;
+  var i       = actions.length;
+  actions[i]            = new String(event_str);
+  actions[i].action_str = action_str;
+  if (action_str == 'showlayer' || action_str == 'hidelayer') {
+    actions[i].target_layer = (navigator.appName == 'Netscape') ? document.layers[arg1] : document.all[arg1];
+  } else if (action_str == 'activatetimeline') {
+    actions[i].timeline_name = arg1;
+  }
+  if (layer.captureEvents)
+    layer.captureEvents(Event.MOUSEUP);
+  layer.onmouseup   = namosw_a_click;
+  layer.onmouseover = namosw_a_mouseover;
+  layer.onmouseout  = namosw_a_mouseout;
+}
+
+function namosw_a_mouseover()
+{
+  var actions = this.namosw_action_array;
+  for (var i = 0; i < actions.length; i++) {
+    if (actions[i] == 'onmouseover') {
+      if (actions[i].action_str == 'showlayer' || actions[i].action_str == 'hidelayer') {
+        namosw_show_layer(actions[i].target_layer, actions[i].action_str == 'showlayer');
+      }
+      else if (actions[i].action_str == 'activatetimeline')
+        NamoTime_Play(actions[i].timeline_name);
+    }
+  }
+}
+
+function namosw_a_mouseout()
+{
+  var actions = this.namosw_action_array;
+  for (var i = 0; i < actions.length; i++) {
+    if (actions[i] == 'onmouseout') {
+      if (actions[i].action_str == 'showlayer' || actions[i].action_str == 'hidelayer')
+        namosw_show_layer(actions[i].target_layer, actions[i].action_str == 'showlayer');
+      else if (actions[i].action_str == 'activatetimeline')
+        NamoTime_Play(actions[i].timeline_name);
+    }
+  }
+}
+
+function namosw_a_click()
+{
+  var actions = this.namosw_action_array;
+  for (var i = 0; i < actions.length; i++) {
+    if (actions[i] == 'onclick') {
+      if (actions[i].action_str == 'showlayer' || actions[i].action_str == 'hidelayer')
+        namosw_show_layer(actions[i].target_layer, actions[i].action_str == 'showlayer');
+      else if (actions[i].action_str == 'activatetimeline')
+        NamoTime_Play(actions[i].timeline_name);
+    }
+  }
+}
+
+function namosw_show_layer(layer, flag)
+{
+  if (navigator.appName == 'Netscape')
+    layer.visibility = flag ? 'show' : 'hide';
+  else
+    layer.style.visibility = flag ? 'visible' : 'hidden';
+}
+
+function namosw_init_layer_action()
+{
+  namosw_add_layer_action('layer1', 'onmouseover', 'showlayer', 'layer2');
+  namosw_add_layer_action('layer1', 'onmouseout', 'hidelayer', 'layer2');
+}
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="black" text="black" link="blue" vlink="purple" alink="red" onload="namosw_init_layer_action();">
+ 
+
+<table border="0" cellpadding="0" cellspacing="0" width="800">
+    <tbody><tr>
+        <td width="800" valign="bottom" background="../char/dispel%20characters_files/index.htm"><p><img src="../feature/feature%20of%20dispel_files/menu.gif" width="570" height="135" border="0" usemap="#ImageMap1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../story%20of%20dispel%200/story%20of%20dispel_files/gamestory.gif" width="173" height="66" border="0"></p></td>
+    </tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" width="800">
+    <tbody><tr>
+        <td width="200" align="left" valign="top"><p>&nbsp;</p><div id="layer1" style="width:126px; height:29px; position:absolute; left:52px; top:180px; z-index:1;">
+                <p align="left"><a href="https://web.archive.org/web/20011230090423/http://www.e2soft.com/kr/"><font size="2" color="white"><img src="../char/dispel%20characters_files/e2.gif" width="123" height="25" border="0"></font></a><font size="2" color="white">&nbsp;</font></p>
+            </div></td>
+        <td width="600"><p align="left">&nbsp;</p>
+            <p align="left"><font size="2" color="#00A3DA">DMAN에는 네 개의 
+            나라( DEAMONLON, AESH, YAEM, SHEREG )가 있고 대륙의 한 가운데인 
+            AESH의 중심에 모든 대륙의 종교를 관장하는 교황청이 있었다. 교황청은 
+            DMAN의 여러 종파들을 조절하며 종교적인 일들을 대표하였고 대대로 
+            교황은 신권으로써 DMAN 각 나라들의 왕권을 조정하는 역할을 해 왔다. 
+            그렇게 DMAN의 역사는 균형을 이루어가며 발전해 왔다. 새로운 교황이 
+            교황청에 의해 선발이 되고 DMAN은 새 교황의 노력으로 평화로운 시대를 
+            맞이한 것처럼 보였다. 몇 년이 흐른 후, 평화로와 보이던 DMAN은 교황의 
+            갑작스런 이단 선포에 혼란에 빠진다. 교황은 자신에게 반대하는 모든 
+            종파들에 이단 선언을 한 것이다. 많은 종파들이 이단으로 선언되었고 
+            그 종파들의 도움을 많이 받던 각 나라들은 교황의 신권 앞에 이단으로 
+            선언된 종파들을 멀리할 수밖에 없었다. 상황은 점점 나빠져 교황은 
+            마침내 모든 이단들을 척결하라는 이단 탄압 전쟁을 선언하였다. 많은 
+            지역에서 단지 교리가 다르다는 이유로 사람들이 죽어가고 이단으로 
+            선언된 종파들은 표면적인 모든 활동을 중지한 채 지하단체 같은 모임으로 
+            전락하고 말았다.</font></p>
+            <p><font size="2" color="#00A3DA">'아돈'은 DAEMONLON국의 한 시골에서 
+            자란 젊은이였다. 그는 따분한 시골 생활에 싫증을 느끼고 모험을 찾아 
+            수도인 NAHASHI로의 여행을 떠난다. 여행을 통해 그는 이단 탄압 전쟁과 
+            교황의 폭정에 대해 차츰 알게 된다. 한 달 여간의 여행을 통해 수도인 
+            NAHASHI에 도착한 그는 우연히 NAHASHI의 입구에서 경비병에게 쫓기고 
+            있는 한 젊은이를 도와주게 되고 그 사건으로 경비병에 쫓기는 신세가 
+            된다.&nbsp;&nbsp;경비병들을 피해 NAHASHI를 벗어나자 그 젊은이는 
+            남쪽 마을 TERAS의 주점에 오면 후사하겠다는 말만을 남기고 황급히 
+            사라진다. NAHASHI에 들어갈 수 없게 된 아돈은 항구마을 HARLOM으로 
+            향한다. HARLOM에서 사람들의 의뢰를 받아서 모험가로써의 명성을 쌓아가던 
+            아돈은 어느 날 한 여성이 맡긴 편지를 TERAS의 자하 조직의 우두머리에게 
+            전해 달라는 의뢰를 받는다. TERAS로 간 아돈은 TERAS의 주점에서 자신이 
+            도와주었던 젊은이를 만난다. 그 젊은이는 자신을 평민 레지스탕스의 
+            일원이라고 소개하고 같이 교황과 이 계급 사회를 타파하자는 제의를 
+            받는다. 고민하던 아돈은 일단 맡은 편지를 전해주기 위해 그 젊은이를 
+            따라 레지스탕스의 본부가 있는 던젼으로 향한다.</font></p>
+            <p><font size="2" color="#00A3DA">레지스탕스의 우두머리 쉠은 젊고 
+            매우 열정 있는 사람이었다. 그에게서는 강한 카리스마와 거칠지만 순수한 
+            정신을 느낄 수 있었다. 그는 드래곤을 마음대로 부렸으며 그 힘으로 
+            교황의 군대와 대적하는 중이었다. 쉠은 아돈에게 YAEM의 ANAN에 가서 
+            그 편지를 준 여인을 찾아 답신을 전해줄 것을 아돈에게 의뢰하고 아돈은 
+            그 길로 YAEM으로 향한다. YAEM의 ANAN에서 그 여인을 찾기는 어렵지 
+            않았다. 그 여인은 ANAN의 사원에서 쉽게 찾을 수 있었고 그녀에게 편지를 
+            전해 준 아돈은 그녀가 교황의 폭정에 항거하기 위해 결성된 집단의 
+            높은 위치에 있음을 알게 된다. 교황에게 이단으로 선언을 받았던 많은 
+            종파들과 교황청에서 교황의 폭력행사에 반대해서 교황청을 빠져 나온 
+            사람들은 종교의 원래 의미를 되찾고 평화로운 대륙을 만들기 위해 순수 
+            종교 단체를 결성하고 대항하는 중이었다.&nbsp;그 무렵, 대륙 전체는 
+            엘로힘이 곧 강림할 것이라는 소문이 돌고 대륙 전체는 그 소문에 술렁거린다. 
+            한 편 교황이 암흑마법으로써 소환한 '갈가돌'들은 대륙 이곳저곳을 
+            무참히 짓밟고 다녔다. 대륙 이곳 저곳을 떠돌며 모험가로써 살아가던 
+            아돈은 다시 TERAS를 찾게 되고 평민 레지스탕스의 우두머리인 쉠에게서 
+            AESH에 있는 FETAE라는 도시에서 한 사람을 만나 조직에 필요한 자금을 
+            좀 받아와 달라는 부탁을 받는다. 쉠은 그 사람의 자금 조달로 레지스탕스의 
+            사람들이 생계를 유지하고 있다는 말을 해주고는 FETAE로의 여행 자금을 
+            준다.</font></p></td>
+    </tr>
+    <tr>
+        <td width="200" height="40" align="right" valign="bottom"><p>&nbsp;</p></td>
+        <td width="600" height="40" align="right" valign="bottom"><p><a href="../story%20of%20dispel%200/story%20of%20dispel.htm?langsite=7"><img src="story%20of%20dispel_files/previous.gif" width="74" height="21" border="0"></a> 
+            &nbsp;<a href="../story%20of%20dispel%202/story%20of%20dispel.htm?langsite=7"><img src="../story%20of%20dispel%200/story%20of%20dispel_files/next.gif" width="48" height="21" border="0"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td width="200" height="40" align="left" valign="top"><p>&nbsp;</p></td>
+        <td width="600" height="40" align="left" valign="top"><p><font face="Arial" size="2" color="silver">copyright E2SOFT. All rights reserved.</font></p></td>
+    </tr>
+</tbody></table>
+<p>&nbsp;</p>
+<p>&nbsp;</p><map name="ImageMap1">
+<area shape="rect" coords="127, 70, 191, 89" href="../story%20of%20dispel%200/story%20of%20dispel.htm?langsite=7">
+<area shape="rect" coords="202, 70, 271, 88" href="../feature/feature%20of%20dispel.htm?langsite=7">
+<area shape="rect" coords="284, 70, 349, 88" href="../screenshot/screen%20shot%20of%20dispel.htm?langsite=7">
+<area shape="rect" coords="360, 70, 405, 88" href="../char/dispel%20characters.htm?langsite=7">
+<area shape="rect" coords="416, 70, 493, 88" href="../system/system.htm?langsite=7">
+<area shape="rect" coords="505, 69, 551, 87" href="https://web.archive.org/web/20011230090423/http://www.e2soft.com/kr/community/index.html" target="_blank">
+</map>
+
+
+
+
+
+
+<script src="../language.js?v=7" charset="utf-8"></script>
+</body></html>
+<!--
+     FILE ARCHIVED ON 09:04:23 Dec 30, 2001 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:17:32 Jul 07, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.667
+  exclusion.robots: 0.182
+  exclusion.robots.policy: 0.172
+  esindex: 0.011
+  cdx.remote: 24.133
+  LoadShardBlock: 88.339 (3)
+  PetaboxLoader3.datanode: 95.804 (4)
+  PetaboxLoader3.resolve: 161.763 (2)
+  load_resource: 251.711
+-->
